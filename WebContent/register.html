@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register Form | Indian Passport Provider System</title>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-pink.min.css" />
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script> -->
+
+</head>
+
+<style type="text/css">
+#show-dialog
+{
+ 
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+/* Full height image header */
+.w3-navbar li a {
+    padding: 16px;
+    float: left;
+}
+
+.mdl-button {
+  color: white;
+  background-color: lightgreen;
+}
+
+</style>
+
+<body>
+
+<p id="demo"></p>
+<!-- Navbar (sit on top) -->
+<p style="text-align:center;font-family:arial;"><strong> Welcome to elearning</strong>, {{Profile.FirstName}} {{Profile.LastName}}  
+<img class="alignnone size-full wp-image-4245" title="litmos Web - Our Customers" src="https://yourcompany.litmos.com{{Profile.ImageSrc}}" alt="" width="20" height="20">
+
+<div id="titlebar">
+   <div class="page-width"> 
+       <h1 class="top-org-name">
+          <img alt="Litmos" border="0" src="http://www.litmos.com/wp-content/themes/litmos-lms/images/litmos-logo.png" />
+        </h1>
+           <div class="nav">
+            <a href="/account"></a>
+            <a href="/account/logout">Sign-Out</a>
+        </div>
+            <div class="clear">
+        </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form action="Register1" method="post">
+ <button id="show-dialog" type="button" class="mdl-button">Registration Form</button>
+  <h4 class="mdl-dialog__title">
+  <p color="blue">press on <u color="green">'Registration Form'</u> to fill-up details...</p>
+  
+  <h9><font color="blue">About Indian Passport</font></h9>
+  <font color="violet">Passport is issued by the Indian Government certify that holders are citizens of the Republic of India by birth or naturalization. This is as per the Passports Act, 1967. The CPV (Consular Passport & Visa) Division of the External Affairs Ministry works as central passport organization and it is also responsible for Indian passport issuance. The issuance of passport happens across 37 different locations around the country. There are 162 diplomatic missions abroad where Indian Passport is issued. These include consulates, High Commissions and Embassies.</font>
+  
+   <img src='image/gov1.png'>
+  
+ 
+ 
+  <dialog class="mdl-dialog">
+  
+    
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input"   name="name" type="text" id="sample3" required>
+    <label class="mdl-textfield__label" for="sample3">NAME...</label>
+  </div><br>  
+   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" name="age" type="text" id="sample3" required>
+    <label class="mdl-textfield__label" for="sample3">Age...</label>
+  </div><br> 
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+   <input type="radio" name="sex" value="male"> Male
+  <input type="radio" name="sex" value="female"> Female
+  <input type="radio" name="sex" value="other"> Other<br>
+ 
+ <!--    <input class="mdl-textfield__input" type="text" id="sample3">
+   <select name="sex">
+    <option value="male">MALE</option>
+    <option value="female">FEMALE</option>
+  </select> 
+  <label class="mdl-textfield__label" for="sample3">Gender</label> -->
+  </div><br>
+  
+   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" name="address" type="text" id="sample3" required>
+    <label class="mdl-textfield__label" for="sample3">Address...</label>
+  </div><br>
+   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" name="dob" type="text" id="sample3" required>
+    <label class="mdl-textfield__label" for="sample3">Dob...</label>
+  </div><br>
+  
+   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" name="password"  type="text" id="sample3" required>
+    <label class="mdl-textfield__label" for="sample3">Password...</label>
+  </div><br>
+  
+  
+   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input"  name="mobile" type="text" id="sample3" required>
+    <label class="mdl-textfield__label" for="sample3">Mobile...</label>
+  </div><br>
+  
+  
+   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" name="email"   type="text" id="sample3" required>
+    <label class="mdl-textfield__label" for="sample3">Email...</label>
+  </div><br>
+  
+
+    <div class="mdl-dialog__content">
+     
+    </div>
+    <div class="mdl-dialog__actions">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Register...
+</button>
+    </div>
+  </dialog>
+ 
+  <script>
+    var dialog = document.querySelector('dialog');
+    var showDialogButton = document.querySelector('#show-dialog');
+    if (! dialog.showModal) {
+      dialogPolyfill.registerDialog(dialog);
+    }
+    showDialogButton.addEventListener('click', function() {
+      dialog.showModal();
+    });
+    dialog.querySelector('.close').addEventListener('click', function() {
+      dialog.close();
+    });
+  </script>
+  
+  <script type="text/javascript"  >
+$(function() {
+
+	  blinking($(".mdl-button"));
+
+	});
+
+	function blinking(elm) {
+	    timer = setInterval(blink, 1000);
+	    function blink() {
+	        elm.fadeOut(5000, function() {
+	        elm.fadeIn(5000);
+	    });
+	    }
+	}
+</script>
+  
+  
+   </h4>
+   </form>
+  
+</body>
+</html>
