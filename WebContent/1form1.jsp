@@ -14,7 +14,7 @@
 String b=request.getParameter("typeofapp");
 String c=request.getParameter("booklet");
 String d=request.getParameter("minor");
-String e=request.getParameter("gname");
+String e=request.getParameter("gname");//ghghg
 String f=request.getParameter("sname");
 String g=request.getParameter("cname");
 String h=request.getParameter("date");
